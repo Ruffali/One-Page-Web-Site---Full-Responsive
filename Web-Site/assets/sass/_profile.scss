@@ -1,0 +1,351 @@
+#profile{
+    .container-fluid{
+        .row{
+            .col-md-12{
+                padding: 0;
+                .profile{
+                    width: 100%;
+                    height: 600px;
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../Images/background/background.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: relative;
+                    .content{
+                        position: absolute;
+                        top: 24%;
+                        left: 22%;
+                        width: 20%;
+                        h1{
+                            color: white;
+                            font-size: 6ch;
+                        }
+                        .photoContent{
+                            position: relative;
+                            margin-top: 5%;
+                            margin-bottom: 30%;
+                            img{
+                                width: 15%;
+                                border-radius: 50%;
+                                border: 2px solid white;
+                                display: inline-block;
+                                margin-right: 10%;
+                            }
+                            span{
+                                color: white;
+                                i{
+                                    padding-left: 5%;
+                                    font-size: 2ch;
+                                    animation: heartAnimation 2s infinite linear;
+                                    transition: all 0.8s linear;
+                                    color: green;
+                                    cursor: pointer;
+                                    opacity: 0;
+                                }
+                            }
+                            &::before{
+                                position: absolute;
+                                content: "";
+                                width: 30%;
+                                height: 2px;
+                                bottom: -50%;
+                                left: 0%;
+                                background: rgb(204, 204, 204);
+                            }
+                        }
+                        .icons{
+                            .leftIcon{
+                                display: inline-block;
+                                width: 45%;
+                                i{
+                                    color: white;
+                                    width: 30%;
+                                    text-align: center;
+                                    height: 40px;
+                                    line-height: 40px;
+                                    background-color: #a03f3f;
+                                    display: inline-block;
+                                    border-radius: 50%;
+                                    animation: heartAnimation 2s infinite linear;
+                                    transition: all 0.8s linear;
+                                    cursor: pointer;
+                                }
+                                span{
+                                    color: white;
+                                    display: inline-block;
+                                    padding-left: 30%;
+                                    transition: all 0.4s linear;
+                                }
+                            }
+                            .rightIcon{
+                                display: inline-block;
+                                width: 45%;
+
+                                i{
+                                    color: white;
+                                    width: 30%;
+                                    height: 40px;
+                                    line-height: 40px;
+                                    background-color: transparent;
+                                    border: 1px solid white;
+                                    display: inline-block;
+                                    border-radius: 50%;
+                                    text-align: center;
+                                    cursor: pointer;
+                                }
+                                span{
+                                    color: white;
+                                    padding-left: 30%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes heartAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes getBig {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@media only screen and (min-width:320px) and (max-width:359px){
+.profile{
+    height: 500px !important;
+}
+    #profile{
+        .content{
+            top: 9% !important;
+            left: 5% !important;
+            width: 45% !important;
+            h1{
+                font-size: 5ch !important;
+            }
+            .photoContent{
+                span.info{
+                    font-size: 14px !important;
+                }
+            }
+            .icons{
+                margin-top: 50% !important;
+                .leftIcon{
+                    margin-right: 6% !important;
+                    i{
+                        width: 50% !important;
+                        border-radius: 55% !important;
+                    }
+                }
+                .rightIcon{
+                    i{
+                        width: 50% !important;
+                        border-radius: 55% !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width:360px) and (max-width:374px){
+    .profile{
+        height: 570px !important;
+    }
+        #profile{
+            .content{
+                top: 18% !important;
+                left: 5% !important;
+                width: 45% !important;
+                h1{
+                    font-size: 5ch !important;
+                }
+                .photoContent{
+                    span.info{
+                        font-size: 14px !important;
+                    }
+                }
+                .icons{
+                    margin-top: 50% !important;
+                    .leftIcon{
+                        margin-right: 6% !important;
+                        i{
+                            width: 50% !important;
+                            border-radius: 55% !important;
+                        }
+                    }
+                    .rightIcon{
+                        i{
+                            width: 50% !important;
+                            border-radius: 55% !important;
+                        }
+                    }
+                }
+            }
+        }
+
+     
+    
+    }
+
+
+    @media only screen and (min-width:375px) and (max-width:410px){
+        .profile{
+            height: 595px !important;
+        }
+            #profile{
+                .content{
+                    top: 18% !important;
+                    left: 5% !important;
+                    width: 45% !important;
+                    h1{
+                        font-size: 5ch !important;
+                    }
+                    .photoContent{
+                        span.info{
+                            font-size: 14px !important;
+                        }
+                    }
+                    .icons{
+                        margin-top: 50% !important;
+                        .leftIcon{
+                            margin-right: 6% !important;
+                            i{
+                                width: 50% !important;
+                                border-radius: 55% !important;
+                            }
+                        }
+                        .rightIcon{
+                            i{
+                                width: 50% !important;
+                                border-radius: 55% !important;
+                            }
+                        }
+                    }
+                }
+            }
+    
+         
+        
+        }
+
+
+        @media only screen and (min-width:411px) and (max-width:767px){
+            .profile{
+                height: 655px !important;
+            }
+                #profile{
+                    .content{
+                        top: 18% !important;
+                        left: 5% !important;
+                        width: 45% !important;
+                        h1{
+                            font-size: 5ch !important;
+                        }
+                        .photoContent{
+                            span.info{
+                                font-size: 14px !important;
+                            }
+                        }
+                        .icons{
+                            margin-top: 50% !important;
+                            .leftIcon{
+                                margin-right: 6% !important;
+                                i{
+                                    width: 50% !important;
+                                    border-radius: 55% !important;
+                                }
+                            }
+                            .rightIcon{
+                                i{
+                                    width: 50% !important;
+                                    border-radius: 55% !important;
+                                }
+                            }
+                        }
+                    }
+                }
+        
+             
+            
+            }
+
+
+            @media only screen and (min-width:768px) and (max-width:1023px){
+                .profile{
+                    height: 940px !important;
+                }
+                    #profile{
+                        .content{
+                            top: 30% !important;
+                            left: 10% !important;
+                            width: 43% !important;
+                            h1{
+                                font-size: 7ch !important;
+                            }
+                            .photoContent{
+                                span.info{
+                                    font-size: 17px !important;
+                                }
+                            }
+                            .icons{
+                                margin-top: 37% !important;
+                               
+                            }
+                        }
+                    }
+            
+                 
+                
+                }
+
+
+
+                @media only screen and (min-width:1024px) and(max-width:1200px){
+                 
+                        #profile{
+                            .content{
+                                top: 15% !important;
+                                left: 10% !important;
+                                width: 43% !important;
+                                h1{
+                                    font-size: 7ch !important;
+                                }
+                                .photoContent{
+                                    span.info{
+                                        font-size: 17px !important;
+                                    }
+                                }
+                                .icons{
+                                    margin-top: 37% !important;
+                                   
+                                }
+                            }
+                        }
+                
+                     
+                    
+                    }

@@ -1,0 +1,264 @@
+body{
+    box-sizing: border-box;
+    background: rgb(218, 217, 217);
+    overflow-x: hidden;
+}
+#navbar{
+    background: rgb(228, 228, 228);
+    .container-fluid{
+        .row{
+            .col-md-4{
+                .icon{
+                    width: 10%;
+                    height: 50px;
+                    img{
+                        width: 100%;
+                        transition: all 1s linear;
+                    }
+                }
+                .centerIcons{
+                    ul{
+                        padding-top: 4%;
+                        li{
+                            transition: all 0.5s ease-in;
+                            cursor: pointer;
+                            text-decoration: none;
+                            display: inline-block;
+                            text-transform: uppercase;
+                            color: rgb(168, 167, 167);
+                            &:nth-child(1){
+                                position: relative;
+                                padding-right: 6%;
+                                &::before{
+                                    position: absolute;
+                                    content: "\f015";
+                                    font-family: "fontAwesome";
+                                    top: -73%;
+                                    left: 24%;
+                                }
+                                &::after{
+                                    position: absolute;
+                                    content: "\f111";
+                                    font-family: "fontAwesome";
+                                    top: -69%;
+                                    right: 44%;
+                                    font-size: 0.7ch;
+                                    color: rgb(173, 35, 35);
+                                    opacity: 0;
+                                    transition: all 0.5s ease-in;
+                                }
+                            }
+                            &:nth-child(4){
+                                padding-left: 6%;
+                                position: relative;
+                                &::before{
+                                    position: absolute;
+                                    content: "\f007";
+                                    font-family: "fontAwesome";
+                                    top: -73%;
+                                    left: 61%;
+                                }
+                                &::after{
+                                    position: absolute;
+                                    content: "\f111";
+                                    font-family: "fontAwesome";
+                                    top: -69%;
+                                    right: 11%;
+                                    font-size: 0.7ch;
+                                    color: rgb(173, 35, 35);
+                                    opacity: 0;
+                                    transition: all 0.5s ease-in;
+                                }
+                            }
+                            &:nth-child(2){
+                                padding-left: 3%;
+                                padding-right: 3%;
+                                position: relative;
+                                &::before{
+                                    position: absolute;
+                                    content: "\f07b";
+                                    font-family: "fontAwesome";
+                                    top: -73%;
+                                    left: 41%;
+                                }
+                                &::after{
+                                    position: absolute;
+                                    content: "\f111";
+                                    font-family: "fontAwesome";
+                                    top: -69%;
+                                    right: 29%;
+                                    font-size: 0.7ch;
+                                    color: rgb(173, 35, 35);
+                                    opacity: 0;
+                                    transition: all 0.5s ease-in;
+                                }
+                            }
+                            &:nth-child(3){
+                                padding-left: 3%;
+                                padding-right: 3%;
+                                position: relative;
+                                &::before{
+                                    position: absolute;
+                                    content: "\f1ea";
+                                    font-family: "fontAwesome";
+                                    top: -73%;
+                                    left: 42%;
+                                }
+                                &::after{
+                                    position: absolute;
+                                    content: "\f111";
+                                    font-family: "fontAwesome";
+                                    top: -69%;
+                                    right: 30%;
+                                    font-size: 0.7ch;
+                                    color: rgb(173, 35, 35);
+                                    opacity: 0;
+                                    transition: all 0.5s ease-in;
+                                }
+                            }
+                            &:hover{
+                                color: rgb(173, 35, 35);
+                            }
+                            &:hover:after{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            .col-md-2{
+                .button{
+                    padding-left: 59%;
+                    padding-top: 4%;
+                    button{
+                        color: white;
+                        background-color: #2E95BB;
+                        border-radius: 15px;
+                        box-shadow: none;
+                        transition: all 0.1s linear;
+                        margin-top: 1.5%;
+                        position: relative;
+                        &::before{
+                            position: absolute;
+                            content: "";
+                            position: absolute;
+                            content: "";
+                            width: 103%;
+                            height: 41px;
+                            top: -12%;
+                            left: -2%;
+                            border: 3px solid #2E95BB;
+                            border-radius: 15px;
+                            transition: all 0.4s linear;
+                            border: 3px solid #2E95BB;
+                            border-radius: 15px;
+                            transition: all 0.4s linear;
+                        }
+                        &:hover:before{
+                            width: 117%;
+                            height: 52px;
+                            top: -20%;
+                            left: -8%;
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &:hover .container-fluid .row .col-md-4 .icon img{
+        transform: rotate(180deg);
+    }
+}
+
+
+@media only screen and (min-width:320px) and (max-width:767px){
+
+    #navbar{
+        .logoCol{
+            display: none !important;
+        }
+        .col-md-2{
+            display: none !important;
+        }
+        .iconCol{
+            .centerIcons{
+                padding-top: 4% !important;
+                text-align: center !important;
+                ul{
+                    font-size: 14px;
+                    padding-left: 0 !important;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+
+    #navbar{
+        .logoCol{
+           .icon{
+            width: 25% !important;
+           }
+        }
+        .emptyCol{
+            display: none !important;
+        }
+        .iconCol{
+            .centerIcons{
+                text-align: center !important;
+                font-size: 11px !important;
+                padding-top: 6% !important;
+                ul{
+                    padding-left: 0 !important;
+                }
+            }
+        }
+
+        .buttonCol{
+            .button{
+                padding-left: 124% !important;
+                padding-top: 10% !important;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width:1024px){
+
+    #navbar{
+        .logoCol{
+           .icon{
+            width: 20% !important;
+            padding-top: 1% !important;
+           }
+        }
+        .emptyCol{
+            display: none !important;
+        }
+        .iconCol{
+            .centerIcons{
+                text-align: center !important;
+                font-size: 15px !important;
+                padding-top: 6% !important;
+                ul{
+                    padding-left: 0 !important;
+                }
+            }
+        }
+
+        .buttonCol{
+            .button{
+                padding-left: 124% !important;
+                padding-top: 10% !important;
+            }
+        }
+    }
+
+
+}
